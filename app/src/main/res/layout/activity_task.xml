@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".show.taskActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/task_order"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:textSize="23sp"
+                android:text="发单进行中"
+                android:background="#FFA500"
+                android:gravity="center"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/task_task_order"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:textSize="23sp"
+                android:text="接单进行中"
+                android:gravity="center"
+                android:background="#999"
+                android:textColor="#fff"/>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/task_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="#F2F2F2"></LinearLayout>
+        <include layout="@layout/activity_bottom"></include>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
